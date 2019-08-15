@@ -1,13 +1,15 @@
 # docker-hexo
 
+> forked and modified from yakumioto/docker-hexo
+
 将 **Hexo** 做成 **Docker** 镜像
 
 ## 使用方法
 
-### 拉取镜像, 当前只有一个版本为 **Hexo** 的 **3.2** 版本
+### 拉取镜像
 
 ```
-docker pull iyannik0215/docker-hexo
+docker pull imux/hexo
 ```
 
 ### 使用 **run** 命令创建容器
@@ -27,7 +29,7 @@ docker run -p 4000:80 --name hexo-server -d \
 -v {你的博客文件夹路径}/_config.yml:/Hexo/_config.yml \
 
 # 后面需要三个参数, 第一个为 github username, 第二个为 github email, 第三个为运行模式, s 为 **hexo server**
-iyannik0215/docker-hexo {你的 github username} {你的 github email} s
+imux/hexo {你的 github username} {你的 github email} s
 ```
 
 #### 创建部署容器
@@ -44,7 +46,7 @@ docker run --name hexo-deploy -d \
 -v {你的博客文件夹路径}/_config.yml:/Hexo/_config.yml \
 
 # 后面需要三个参数, 第一个为 github username, 第二个为 github email, 第三个为运行模式, d 为 **hexo deploy**
-iyannik0215/docker-hexo {你的 github username} {你的 github email} d
+imux/hexo {你的 github username} {你的 github email} d
 ```
 
 ### 后续的使用

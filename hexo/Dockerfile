@@ -12,10 +12,10 @@ RUN npm install hexo-cli -g \
 
 VOLUME ["/hexo"]
 
-EXPOSE 8080
+# EXPOSE 8080
 
-COPY docker-entrypoint.sh /docker-entrypoint.sh
+# COPY docker-entrypoint.sh /docker-entrypoint.sh
 
-ENTRYPOINT ["/docker-entrypoint.sh"]
+# ENTRYPOINT ["/docker-entrypoint.sh"]
 
 CMD ["/bin/bash"]

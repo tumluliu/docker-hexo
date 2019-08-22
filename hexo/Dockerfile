@@ -10,7 +10,7 @@ RUN npm install hexo-cli -g \
     && npm install hexo-generator-feed --save \
     && npm install hexo-deployer-git --save
 
-VOLUME ["/hexo/source", "/hexo/themes", "/root/.ssh"]
+VOLUME ["/hexo"]
 
 EXPOSE 8080
 

@@ -49,7 +49,7 @@ docker run --name hexo-deploy -d \
 
 # 后面需要一个参数, 运行模式, d 为 **hexo deploy**
 
-imux/hexo {你的 github username} {你的 github email} d
+imux/hexo d
 ```
 
 ### 后续的使用

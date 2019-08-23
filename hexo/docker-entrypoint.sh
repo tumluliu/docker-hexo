@@ -5,7 +5,11 @@ if [ "$1" = 's' ] || [ "$1" = 'server' ]; then
 fi
 
 if [ "$1" = 'd' ] || [ "$1" = 'deploy' ]; then
-    set -- hexo cl && hexo d -g
+    set -- hexo d -g
+fi
+
+if [ "$1" = 'cl' ] || [ "$1" = 'clean' ]; then
+    set -- hexo cl
 fi
 
 exec "$@"

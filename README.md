@@ -29,7 +29,7 @@ docker run -p 4000:8080 --name hexo-server -d \
 -v {你的博客文件夹路径}/_config.yml:/hexo/_config.yml \
 
 # 后面需要运行参数 运行模式, s 为运行 **hexo server**
-```
+
 imux/hexo s
 ```
 
@@ -48,7 +48,7 @@ docker run --name hexo-deploy -d \
 -v {你的博客文件夹路径}/_config.yml:/hexo/_config.yml \
 
 # 后面需要一个参数, 运行模式, d 为 **hexo deploy**
-```
+
 imux/hexo {你的 github username} {你的 github email} d
 ```
 

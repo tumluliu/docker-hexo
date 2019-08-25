@@ -12,9 +12,12 @@ if [ "$1" = 'cl' ] || [ "$1" = 'clean' ]; then
     set -- hexo cl
 fi
 
-if [ "$1" = 'g' ] || [ "$1" = 'generate
-' ]; then
+if [ "$1" = 'g' ] || [ "$1" = 'generate' ]; then
     set -- hexo generate
+fi
+
+if [ "$1" = 'n' ] || [ "$1" = 'new' ]; then
+    set -- hexo new $2
 fi
 
 exec "$@"

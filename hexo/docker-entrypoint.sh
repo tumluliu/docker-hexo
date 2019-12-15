@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [ "$1" = 's' ] || [ "$1" = 'server' ]; then
-    set -- hexo s -p 8080
+    set -- hexo s -p 4321
 fi
 
 if [ "$1" = 'd' ] || [ "$1" = 'deploy' ]; then
@@ -21,4 +21,3 @@ if [ "$1" = 'n' ] || [ "$1" = 'new' ]; then
 fi
 
 exec "$@"
-

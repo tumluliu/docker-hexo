@@ -1,0 +1,15 @@
+version: '2.1'
+services:
+  hexo:
+    image: local:hexo
+    container_name: hexo
+    # restart: always
+    expose:
+      - "4321"
+    ports:
+      - "4000:4321"
+    volumes:
+      - ./source:/hexo/source
+      - ./themes:/hexo/themes
+      - ./_config.yml:/hexo/_config.yml
+    command: s

@@ -1,7 +1,7 @@
 version: '2.1'
 services:
   hexo:
-    image: local:hexo
+    image: tumluliu/hexo
     container_name: hexo
     # restart: always
     expose:

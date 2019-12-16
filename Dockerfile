@@ -11,7 +11,6 @@ RUN npm install hexo-cli@${HEXO_VERSION} -g && \
     npm install && \
     npm install --save hexo-generator-sitemap && \
     npm install --save hexo-generator-feed && \
-    npm install --save hexo-admin && \
     chown -R hexo /hexo
 
 USER hexo
